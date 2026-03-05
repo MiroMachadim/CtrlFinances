@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"
+	<title>Cadastro</title>
+	</head>
+	<body>
+	    <div class="conteiner">
+			<div class="titulo">
+			<h1>Adicione sua transação</h1>
+			</div>
+			<div class="conteudo">
+			    <form>
+					<label for="tipo">Tipo:</label>
+					<select id="tipo" name="tipo">
+					    <option value="receita">receita</option>
+						<option value="despesa">despesa</option>
+					</select>
+					<label for="valor">Valor(R$)</label>
+					    <input id="valor" type="number" value="00,00" name="valor">
+					<label for="data">Data:</label>
+					    <input id="date" name="data">
+					<label for="categoria">Categoria</label>
+					    <input id="categoria" type="text" name="categoria" list="">
+					<label for="descricao">Descrição(opcional):</label>
+					<textarea name="message" id="descricao" rows="10" cols="30"</textarea>
+					<input type="submit" value="enviar">
+					</form>
+			</div>
+		</div>
+	</body>
+</html>
