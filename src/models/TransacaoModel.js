@@ -8,12 +8,13 @@ export class TransacaoModel {
         localStorage.setItem('transacao', JSON.stringify(this.transacoes));
     }
 
-    addTransacao(Categoria, Tipo, Data, Descricao=null){
+    addTransacao(Tipo, Categoria, Data, Valor, Descricao=null){
         const transacao = {
         uniqueId: crypto.randomUUID(),
-        categoria: Categoria,
         tipo: Tipo,
+        categoria: Categoria,
         data: Data,
+        valor: Valor,
         descricao: Descricao,
         }
         this.transacoes.push(transacao);
